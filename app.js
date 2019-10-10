@@ -14,7 +14,6 @@ function sum(a, b) { //eslint-disable-line
 var result = ' The sum of  ' + a + '  and  ' + b + ' is ?  ' ; 
 var c = a+b;
 return [ c ,result] ; 
-
 }
 
 // Here is the test for sum(); uncomment it to run it
