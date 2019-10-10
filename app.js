@@ -11,10 +11,10 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
 // num and string 
 
-var string = ' The sum of  ' + a + '  and  ' + b + ' is ?  ' ; 
-var c = a+b;
-console.log(' ResultOfSum  = ' + c);
-return [ c ,string] ; 
+var Result = a+b;
+var string = ' The sum of  ' + a + '  and  ' + b + ' is ' + Result + '.' ; 
+console.log(' Result Of Sum  = ' + Result);
+return [ Result ,string] ; 
 }
 
 
@@ -36,10 +36,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a,b) { //eslint-disable-line
 
-    var string = ' The product of  ' + a + '  and  ' + b + ' is ?  ' ; 
-    var c = a*b ;
-    console.log(' ResultOfProduct  = ' + c);
-    return [ c ,string] ; 
+    var Result = a*b ;
+    var string = ' The product of  ' + a + '  and  ' + b + ' is  ' + Result + '.' ;
+    console.log(' Result Of Product  = ' + Result);
+    return [ Result ,string] ; 
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -49,7 +49,10 @@ function multiply(a,b) { //eslint-disable-line
 
 /////////////////////////////////////
 /* Problem 3
-Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
+Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array 
+where the first element is the sum of those three numbers, the second element is the product of those three numbers, 
+ and the third and fourth elements are strings that EXACTLY follow this example and 
+ use the values that were input into the function:
 
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
@@ -61,6 +64,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
+    var Result1 = a+b+c ;
+    var Result2 = a*b*c ;
+
+    var string1 = a + ' and  ' + b + '  and  ' + c  + ' sum to  ' + Result1 + '.' ; 
+    var string2 = ' The product of ' + a + '  and  ' + b + ' and  ' + c + ' is ' + Result1 + '.' ; 
+
+    console.log(' Result Of Sum & Product  = ' + Result1 ,Result2);
+    return [  ' Result of sum = ' + Result1 ,' Result of Multiply = ' + Result2 , string1 , string2] ; 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
