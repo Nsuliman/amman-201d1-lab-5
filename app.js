@@ -137,6 +137,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
 
+    var ResultofPro2NumArry = multiply(testArray[0],testArray[1]) ;
+    var ResultofPro3NumArry = multiply(global,testArray[2]);
+
+    // console.log('product of two array num = ' + ResultofPro2NumArry + 'product of three array num = ' + ResultofPro3NumArry );
+
+    var string = '2,3,4 was passed in as an array of numbers , and ' + ResultofPro3NumArry + ' is their sum.'
+    return [ ResultofPro3NumArry ,string] ;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
