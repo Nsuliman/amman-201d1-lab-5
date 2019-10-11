@@ -11,14 +11,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 
-var global = 0 ;
+var global = 0 ; /// to save globaly the result value of Sum and multiby
 
 function sum(a, b) { //eslint-disable-line
 // num and string 
 
 var Result = a+b;
 var string = ' The sum of  ' + a + '  and  ' + b + ' is ' + Result + '.' ; 
-console.log(' Result Of Sum Two Numbers  = ' + Result);
+//console.log(' Result Of Sum Two Numbers  = ' + Result);
 global = Result ; 
 return [ Result ,string] ; 
 }
@@ -45,7 +45,7 @@ function multiply(a,b) { //eslint-disable-line
     var Result = a*b ;
     var string = ' The product of  ' + a + '  and  ' + b + ' is  ' + Result + '.' ;
     global = Result ; 
-    console.log(' Result Of Product Two Numbers  = ' + Result);
+   // console.log(' Result Of Product Two Numbers  = ' + Result);
     return [ Result ,string] ; 
 }
 
@@ -172,6 +172,15 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
+    var SumOfProArray = 1 ;         // the value for this variable is one because any number multiply by one will be the same , inital value 
+
+    for (var i = 0 ; i<testDynamicArray.length; i++)
+    {   
+        SumOfProArray = SumOfProArray * testDynamicArray[i];
+    }
+    var string = 'The numbers 1,2,3,4,5 have a product of  ' + SumOfProArray + '.' ;
+
+    return [SumOfProArray,string];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
