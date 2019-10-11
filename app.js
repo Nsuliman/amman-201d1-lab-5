@@ -12,6 +12,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 var global = 0 ; /// to save globaly the result value of Sum and multiby
 
+
+//// ********************* Testing for Mr.JB *******************************
+
 function sum(a, b) { //eslint-disable-line
 // num and string 
 
@@ -79,7 +82,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
-    var Sum3NumPro = [];
+   // var Sum3NumPro = [];
 
     var ResultofSum2Num = sum(a,b) ;
     var ResultofSum3Num = global +c ;
