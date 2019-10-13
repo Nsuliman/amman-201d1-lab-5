@@ -51,7 +51,6 @@ function multiply(a,b) { //eslint-disable-line
     var string ='The product of '+a+' and '+b+' is '+Result+'.' ; 
 
     global = Result ; 
-    // globalPro = b + Result;
 
    // console.log(' Result Of Product Two Numbers  = ' + Result);
     return [ Result ,string] ; 
@@ -85,7 +84,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
    // var Sum3NumPro = [];
 
     var ResultofSum2Num = sum(a,b) ;
-    var ResultofSum3Num = global +c ;
+    var ResultofSum3Num = global + c ;
     var string1 = a+ ' and ' + b +' and ' + c + ' sum to ' + ResultofSum3Num+'.' ; 
     
     var ResultofPro2Num = multiply(a,b) ;
@@ -121,7 +120,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
 
     var ResultofSum2NumArry = sum(testArray[0],testArray[1]) ;
-    var ResultofSum3NumArry =global+testArray[2];
+    var ResultofSum3NumArry = global+testArray[2];
 
     //console.log('sum of two array num = ' + ResultofSum2NumArry + 'sum of three array num = ' + ResultofSum3NumArry );
 
@@ -150,7 +149,8 @@ Test this function by hand in the console to get it working, and when you think 
 function multiplyArray(multArr) { //eslint-disable-line
 
     var ResultofPro2NumArry = multiply(testArray[0],testArray[1]) ;
-    var ResultofPro3NumArry = global * testArray[2];
+    // var ResultofPro3NumArry = multiply(ResultofPro2NumArry[0],testArray[2]);
+     var ResultofPro3NumArry = global * testArray[2];
 
     // console.log('product of two array num = ' + ResultofPro2NumArry + 'product of three array num = ' + ResultofPro3NumArry );
 
